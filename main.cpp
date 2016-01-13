@@ -28,6 +28,7 @@ int numero2 = 134;
 
 int main(int argc, char const *argv[])
 {
+    int i = 10;
     std::cout << "Escribe un numero: " << std::endl;
     cin>>numero1;
     if (numero1 <= numero2)
@@ -40,5 +41,13 @@ int main(int argc, char const *argv[])
     }
     comprobador = (numero1 <= numero2 && numero2 == numero1);
     std::cout << comprobador << std::endl;
+
+    do
+    {
+        cout << i << endl;
+        i++;
+    }
+    while (i<=100);
+
     return 0;
 }
